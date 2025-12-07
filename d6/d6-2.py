@@ -15,4 +15,3 @@ for col in work:
         temp.append(''.join(col))
 vertwork.append([*map(int, temp)])
 print(sum(ft.reduce(lambda x,y: {'+': op.add, '*': op.mul}.get(ops[i])(x, y), vertwork[i]) for i in range(len(vertwork))))
-
